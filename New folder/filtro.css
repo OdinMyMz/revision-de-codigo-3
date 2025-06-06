@@ -1,0 +1,35 @@
+input {
+  width: 500px;
+  height: 40px;
+  font-size: 18px;
+}
+
+#lista-de-productos {
+  display: flex;
+  flex-wrap: wrap;
+  /* wrap añadido para que los productos salten de linea en pantallas pequeñas  */
+}
+
+.producto {
+  width: 200px;
+
+  /* height en auto para que se ajuste al contenido   */
+  height: auto;  
+
+  margin: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* padding para mejorar separacion interna */
+  padding: 5px; 
+}
+
+.producto img {
+  width: 70%;
+  height: auto;
+
+  /* ajuste de imagen   */
+  object-fit: contain; 
+}
